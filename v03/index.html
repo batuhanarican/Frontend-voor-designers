@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="./css/reset.css" rel="stylesheet"/>
+        <link href="./css/style.css" rel="stylesheet"/>
+
+        <title>MixItUp Demo - Columns Grid</title>
+    </head>
+    <body>
+        <div class="controls">
+            <button type="button" class="control" data-filter="all">All</button>
+            <button type="button" class="control" data-filter=".yellow">Green</button>
+            <button type="button" class="control" data-filter=".blue">Blue</button>
+            <button type="button" class="control" data-filter=".pink">Pink</button>
+        </div>
+
+        <div class="container">
+            <div class="mix yellow"><img src="img/geel1.jpg" alt="gele bloem"></div>
+            <div class="mix yellow"><img src="img/geel2.jpg" alt="gele bloemen"></div>
+            <div class="mix blue"><img src="img/blauw1.jpg" alt="blauwe bloem"></div>
+            <div class="mix pink"><img src="img/rood1.jpg" alt="rode bloem"></div>
+            <div class="mix blue"><img src="img/blauw2.jpg" alt="blauwe bloem"></div>
+            <div class="mix pink"><img src="img/rood2.jpg" alt="rode bloem"></div>
+            <div class="mix yellow"><img src="img/geel2.jpg" alt="gele bloem"></div>
+            <div class="mix yellow"><img src="img/geel1.jpg" alt="gele bloemen"></div>
+            <div class="mix blue"><img src="img/blauw2.jpg" alt="blauwe bloem"></div>
+            <div class="mix pink"><img src="img/rood2.jpg" alt="rode bloem"></div>
+            <div class="mix blue"><img src="img/blauw1.jpg" alt="blauwe bloem"></div>
+            <div class="mix pink"><img src="img/rood1.jpg" alt="rode bloem"></div>
+
+        </div>
+
+        <script src="./js/script.js"></script>
+
+        <script>
+            var containerEl = document.querySelector('.container');
+
+            var mixer = mixitup(containerEl, {
+                animation: {
+                    animateResizeContainer: false
+                }
+            });
+        </script>
+    </body>
+</html>
