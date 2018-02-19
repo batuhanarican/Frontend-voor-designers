@@ -1,10 +1,8 @@
 # Opdracht 1
 
-Hier beschrijf je de opdracht, wat je hebt gemaakt en hoe je je ontwerp door verschillende versies te testen hebt verbeterd. Bij iedere test voeg je een link toe naar de betreffende demo.
+Voor opdracht 1 heb ik een website gemaakt waarop de gebruiker kan filteren op kleur.
 
-Bijvoorbeeld bij de demo van versie in kun je zo een link maken, zodat iedereen de demo zelf kan uitproberen:
-
-[Demo versie 1](v01/)
+[Demo versie 1](v01/index.html)
 
 [Demo versie 2](v02/)
 
