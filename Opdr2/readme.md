@@ -1,4 +1,4 @@
-# Opdracht 1
+# Opdracht 2
 
 Voor opdracht 2 heb ik een website gemaakt waarin de scroll waarde wordt gebruikt als interactie.
 
