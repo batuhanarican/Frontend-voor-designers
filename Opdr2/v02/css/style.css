@@ -10,6 +10,18 @@
     100%{background-position:10% 0%}
 }
 
+@keyframes MoveUpDown {
+  0% {
+    bottom: 17vh;
+  }
+  50% {
+    bottom: 14vh;
+  }
+  100% {
+    bottom: 17vh;
+  }
+}
+
 body {
     margin: 0;
     font-family: sans-serif;
@@ -58,7 +70,7 @@ nav ul li a {
 h1 {
     font-weight: 200;
     font-family: Nettizen;
-    font-size: 9rem;
+    font-size: 10rem;
     color: white;
     position: absolute;
     top: 30vh;
@@ -103,8 +115,6 @@ div.section {
     transition: .5s ease-in-out;
 }
 
-
-
 div.section1 {
     position: relative;
     height: 100vh;
@@ -114,8 +124,6 @@ div.section1 {
     z-index: 1;
 }
 
-
-
 div.section2 {
     height: 100vh;
     background-color: #0d0d0d;
@@ -123,7 +131,7 @@ div.section2 {
 
 div.section3 {
     height: 100vh;
-    background-color: darkviolet;
+    background-color: #0d0d0d;
 }
 
 div.chameleon {
@@ -149,4 +157,28 @@ img {
     bottom: 2rem;
     z-index: 2;
     
+}
+
+div.scrolld {
+    position: fixed;
+    bottom: 17vh;
+    height: 1.3rem;
+    width: 2rem;
+    left: 50vw;
+    opacity: 100;
+    padding: 1rem 0;
+    transform: translate(-50%, 0%);
+    background: url(../img/scroll_d.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+    animation: MoveUpDown 2s ease-in-out infinite;
+    transition: .3s ease-in-out;
+    pointer-events: visible;
+    cursor: pointer;
+}
+
+div.scrolldAdd {
+    opacity: 0;
+    pointer-events: none;
 }

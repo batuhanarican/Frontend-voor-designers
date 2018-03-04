@@ -3,6 +3,7 @@ var counter2 = document.querySelector('.height-counter');
 var counter3 = document.querySelector('.width-counter');
 
 var chameleon = document.querySelector('.chameleon');
+var scrolldAdd = document.querySelector('.scrolld');
 
 var indicator = document.querySelectorAll('nav ul li');
 
@@ -23,26 +24,34 @@ function measureScreen (){
 }
 
 function changeColor() {
-  var height = window.pageYOffset;
+    var height = window.pageYOffset;
+    if(height < h*0.10) {
+        scrolldAdd.classList.remove('scrolldAdd');
+    }
+
+    if(height >= h*0.10) {
+        scrolldAdd.classList.add('scrolldAdd');
+    }
+
     if(height >= h/2) {
         indicator[0].classList.remove('indicator1');
-  }
+    }
     if(height < h/2){
         indicator[0].classList.add('indicator1');
         indicator[1].classList.remove('indicator2');
-  }
+    }
     if(height >= h-(h/2)) {
         indicator[1].classList.add('indicator2');
         indicator[2].classList.remove('indicator3');
-  }
+    }
     if(height < h-(h/2)) {
-  }
+    }
     if(height >= h*2-(h/2)) {
         indicator[1].classList.remove('indicator2');
         indicator[2].classList.add('indicator3');
-  }
+    }
     if(height < h*2-(h/2)) {
-  }
+    }
 }
 
 function smoothScroll(x) {
@@ -73,4 +82,7 @@ indicator[1].addEventListener('click', function(){
 }, false);
 indicator[2].addEventListener('click', function(){
     smoothScroll(2);
+}, false);
+scrolldAdd.addEventListener('click', function(){
+    smoothScroll(1);
 }, false);
