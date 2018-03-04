@@ -107,9 +107,9 @@ div.section {
 div.section1 {
     position: relative;
     height: 100vh;
-    background: linear-gradient(323deg, #17b48c, #b72fba, #23bcd1, #d19c23, #d12381);
-    background-size: 800% 800%;
-    animation: gradientBG 30s ease infinite;
+    background: linear-gradient(323deg, #17b48c, #b72fba, #23bcd1, #d19c23, #d12381, #17b48c, #b72fba, #23bcd1, #d19c23, #d12381);
+    background-size: 1600% 1600%;
+    animation: gradientBG 60s ease infinite;
     z-index: 1;
 }
 
@@ -132,9 +132,9 @@ div.chameleon {
     z-index: 1;
     width: 12rem;
     height: 10.65rem;
-    background: linear-gradient(323deg, #17b48c, #b72fba, #23bcd1, #d19c23, #d12381);
-    background-size: 800% 800%;
-    animation: gradientBG 30s ease infinite;
+    background: linear-gradient(323deg, #17b48c, #b72fba, #23bcd1, #d19c23, #d12381, #17b48c, #b72fba, #23bcd1, #d19c23, #d12381);
+    background-size: 1600% 1600%;
+    animation: gradientBG 60s ease infinite;
     -webkit-mask-image: url(../img/base.svg);
     -webkit-mask-position: center center;
     -webkit-mask-repeat: no-repeat;
