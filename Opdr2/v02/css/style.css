@@ -160,7 +160,7 @@ img {
 }
 
 div.scrolld {
-    position: fixed;
+    position: absolute;
     bottom: 17vh;
     height: 1.3rem;
     width: 2rem;
