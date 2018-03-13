@@ -18,49 +18,50 @@ function countHeight() {
     h = window.innerHeight;
 }
 
-function measureScreen (){
+function measureScreen() {
     console.log(w);
     console.log(h);
 }
 
 function changeColor() {
     var height = window.pageYOffset;
-    if(height < h*0.10) {
+    if (height < h * 0.10) {
         scrolldAdd.classList.remove('scrolldAdd');
     }
 
-    if(height >= h*0.10) {
+    if (height >= h * 0.10) {
         scrolldAdd.classList.add('scrolldAdd');
     }
 
-    if(height >= h/2) {
+    if (height >= h / 2) {
         indicator[0].classList.remove('indicator1');
     }
-    if(height < h/2){
+    if (height < h / 2) {
         indicator[0].classList.add('indicator1');
         indicator[1].classList.remove('indicator2');
+		indicator[2].classList.remove('indicator3');
     }
-    if(height >= h-(h/2)) {
+    if (height >= h - (h / 2)) {
         indicator[1].classList.add('indicator2');
         indicator[2].classList.remove('indicator3');
     }
-    if(height < h-(h/2)) {
+    if (height < h - (h / 2)) {
     }
-    if(height >= h*2-(h/2)) {
+    if (height >= h * 2 - (h / 2)) {
         indicator[1].classList.remove('indicator2');
         indicator[2].classList.add('indicator3');
     }
-    if(height < h*2-(h/2)) {
+    if (height < h * 2 - (h / 2)) {
     }
 }
 
 function smoothScroll(x) {
-    console.log('Scroll smooth ' + (x+1));
+    console.log('Scroll smooth ' + (x + 1));
     window.scroll({
-    top: h*x, 
-    left: 0, 
-    behavior: 'smooth' 
-});
+    top: h * x,
+    left: 0,
+    behavior: 'smooth'
+	});
 }
 
 countHeight();
@@ -68,21 +69,21 @@ countHeight();
 console.log(window.scrollY);
 console.log(w);
 console.log(h);
-    
+ 
 window.addEventListener('scroll', countHeight);
 window.addEventListener('scroll', changeColor);
 window.addEventListener('resize', measureScreen);
 window.addEventListener('resize', countHeight);
 
-indicator[0].addEventListener('click', function(){
+indicator[0].addEventListener('click', function () {
     smoothScroll(0);
 }, false);
-indicator[1].addEventListener('click', function(){
+indicator[1].addEventListener('click', function () {
     smoothScroll(1);
 }, false);
-indicator[2].addEventListener('click', function(){
+indicator[2].addEventListener('click', function () {
     smoothScroll(2);
 }, false);
-scrolldAdd.addEventListener('click', function(){
+scrolldAdd.addEventListener('click', function () {
     smoothScroll(1);
 }, false);
