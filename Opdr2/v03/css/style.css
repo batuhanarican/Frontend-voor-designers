@@ -215,7 +215,7 @@ div.scrolld {
     opacity: 100;
     padding: 1rem 0;
     transform: translate(-50%, 0%);
-    background: url(../img/arrowD.svg);
+    background: url(../img/scroll_d.svg);
     background-repeat: no-repeat;
     background-position: center;
     z-index: 1;
