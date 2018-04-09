@@ -1,0 +1,51 @@
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #0c1124 0%,#0d1427 100%);
+    color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+h3 {
+    font-weight: 600;
+    margin: .5rem 0;
+}
+
+h4 {
+    color: #358d85;
+    margin: 1rem 0;
+    margin-bottom: 0rem;
+}
+
+p.height-offset {
+    position: fixed;
+    margin: 0;
+    top: .2rem;
+    left: .2rem;
+    z-index: 2;
+}
+
+p.height-counter {
+    position: fixed;
+    margin: 0;
+    top: 1.5rem;
+    left: .2rem;
+    z-index: 2;
+}
+
+p.width-counter {
+    position: fixed;
+    margin: 0;
+    top: 2.8rem;
+    left: .2rem;
+    z-index: 2;
+}

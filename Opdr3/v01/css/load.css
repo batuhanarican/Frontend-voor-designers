@@ -1,0 +1,211 @@
+@keyframes placeHolderShimmer {
+  0%{ background-position: -468px 0; }
+  100%{ background-position: 468px 0; }
+}
+
+/*///////////////////////Featured///////////////////////*/
+
+main div.loadingFeatured {
+    margin-top: 4.4rem;
+    height: 25.5rem;
+    font-size: .8rem;
+}
+
+main div.loadingFeatured .bgPlaceholder {
+    position: absolute;
+    top: 0rem;
+    width: 100%;
+    height: 32rem;
+    background: linear-gradient(to bottom, #142249 0%,#0d1329 100%);
+    filter: blur(20px);
+    z-index: -1;
+}
+
+main div.loadingFeatured section {
+    margin: 0 3rem;
+}
+
+main div.loadingFeatured section article {
+    position: relative;
+    max-width: 50rem;
+    margin: auto;
+}
+
+main div.loadingFeatured section article::before {
+    content: '';
+    position: absolute;
+    top: 3rem;
+    background: white;
+    width: 100%;;
+    height: 17.5rem;
+    border-radius: .5rem;
+}
+
+main div.loadingFeatured section article .imgPlaceholder {
+    position: absolute;
+    top: 2rem;
+    width: 214px;
+    height: 307px;
+    border-radius: .5rem;
+    box-shadow: 0px 0px 10px black;
+    filter: none;
+    z-index: 1;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeHolderShimmer;
+    animation-timing-function: linear;
+    background: #f6f7f8;
+    background: linear-gradient(to right, #142249 8%, #0d1329 18%, #142249 33%);
+    background-size: 800px 104px;
+}
+
+main div.loadingFeatured section article div.gridWrapper {
+    position: absolute;
+    margin-top: 3rem;
+    margin-left: 14.5rem;
+    margin-right: 1rem;
+    display: grid;
+    grid-gap: 0 0.5rem;
+}
+
+main div.loadingFeatured section article div.gridWrapper h3 {
+    grid-column: 1 / span 2;
+    margin: 1.2rem 0 .4rem 0;
+    font-size: 1.5rem;
+    color: #3c486e;
+}
+
+main div.loadingFeatured section article div.gridWrapper h4 {
+    margin: 0;
+    color: dimgray;
+    font-weight: 500;
+    
+}
+
+main div.loadingFeatured section article div.gridWrapper h5 {
+    margin: 0;
+    color: #757575;
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+main div.loadingFeatured section article div.gridWrapper p {
+    grid-column: 2 / span 1;
+    color: #3d3d3d;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+main div.loadingFeatured section article ul {
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+}
+
+main div.loadingFeatured section article ul li {
+    display: block;
+    color: #358d85;
+    list-style: none;
+}
+
+/*///////////////////////Discover///////////////////////*/
+
+main div.loadingDiscover section article p {
+    margin: .5rem 0;
+/*    display: none;*/
+}
+
+main div.loadingDiscover h2 {
+    max-width: 55rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main div.loadingDiscover h3 {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+main div.loadingDiscover h4 {
+    font-weight: 400;
+    font-size: .8rem;
+}
+
+main div.loadingDiscover {
+    margin: 0 3rem;
+}
+
+main div.loadingDiscover section {
+    max-width: 55rem;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 3rem;
+}
+
+main div.loadingDiscover section article {
+    position: relative;
+    margin: 0 auto;
+/*    margin-top: -1rem;*/
+}
+
+main div.loadingDiscover section article .imgPlaceholder {
+    width: 8.5rem;
+    height: 12.5rem;
+    max-width: 15rem;
+    border-radius: .5rem;
+    box-shadow: 0px 0px 10px black;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeHolderShimmer;
+    animation-timing-function: linear;
+    background: #f6f7f8;
+    background: linear-gradient(to right, #142249 8%, #0d1329 18%, #142249 33%);
+    background-size: 800px 104px;
+    }
+
+main div.loadingDiscover section article div.datePlaceholder {
+    margin-top: 1.4rem;
+    width: 75%;
+    height: .6rem;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeHolderShimmer;
+    animation-timing-function: linear;
+    background: #f6f7f8;
+    background: linear-gradient(to right, #142249 8%, #0d1329 18%, #142249 33%);
+    background-size: 800px 104px;
+}
+
+main div.loadingDiscover section article div.genrePlaceholder {
+    margin-top: .4rem;
+    width: 60%;
+    height: .6rem;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeHolderShimmer;
+    animation-timing-function: linear;
+    background: #f6f7f8;
+    background: linear-gradient(to right, #142249 8%, #0d1329 18%, #142249 33%);
+    background-size: 800px 104px;
+}
+
+main div.loadingDiscover section article div.titlePlaceholder {
+    margin-top: .8rem;
+    width: 90%;
+    height: 1rem;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeHolderShimmer;
+    animation-timing-function: linear;
+    background: #f6f7f8;
+    background: linear-gradient(to right, #142249 8%, #0d1329 18%, #142249 33%);
+    background-size: 800px 104px;
+}

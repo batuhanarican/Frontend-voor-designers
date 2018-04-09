@@ -1,50 +1,76 @@
-var header = document.querySelector('header');
-var section = document.querySelector('section');
+var counter = document.querySelector('.height-offset');
+var counter2 = document.querySelector('.height-counter');
+var counter3 = document.querySelector('.width-counter');
 
-var requestURL = 'http://dennistel.nl/movies';
-var request = new XMLHttpRequest();
+var w = window.innerWidth;
+var h = window.innerHeight;
+
+function countHeight() {
+    counter.innerHTML = "Offset = " + window.pageYOffset;   
+    counter2.innerHTML = "Height = " + window.innerHeight;
+    counter3.innerHTML = "Width = " + window.innerWidth;
+    o = window.pageYOffset;
+    w = window.innerWidth;
+    h = window.innerHeight;
+}
+
+function measureScreen() {
+    console.log(w);
+    console.log(h);
+}
+
+var header = document.querySelector('header');
+var main = document.querySelector('main');
+var featured = document.querySelector('.featured');
+var discover = document.querySelector('.discover');
+
+var sectionFeatured = document.querySelector('.sectionFeatured');
+var sectionDiscover = document.querySelector('.sectionDiscover');
+var pFeatured = document.querySelector('main div.featured p');
+
+//******************Request******************
+
+
+    var requestURL = 'http://dennistel.nl/movies';
+    var request = new XMLHttpRequest();
 
 request.open('GET', requestURL);
 request.responseType = 'json';
-request.send();
-request.onload = function() {
-  var jsonObj = request.response;
-  console.log(jsonObj[0].genres);
-  showMovies(jsonObj);
-};
 
-function showMovies(jsonObj){
-    for(var i=0; i < jsonObj.length; i++){
-        
-        var article = document.createElement('article');
-        var img = document.createElement('img');
-        img.src = jsonObj[i].cover;  
-        
-        var h1 = document.createElement('h1');
-        h1.textContent = jsonObj[i].title;
-        
+setTimeout(function(){
+    request.send();
+    request.onload = function() {
+    var jsonObj = request.response;
+    showFeatured(jsonObj);
+    showMovies(jsonObj);
+    showMovies(jsonObj);
+    showMovies(jsonObj);
+    };
+},1);
 
-        var myPara = document.createElement('p');
-        myPara.textContent = jsonObj[i].plot;
-        
-        
-        var genreUl = document.createElement('ul');
-        
-        
-        var genres = jsonObj[i].genres;
-        for (var g=0; g < jsonObj[i].genres.length; g++) {
-            var genreLi = document.createElement('li');
-            genreLi.textContent = genres[g];
-            genreUl.appendChild(genreLi);
-        }
-        
-        article.appendChild(img);
-        article.appendChild(h1);
-        article.appendChild(myPara);
-        article.appendChild(genreUl);
-        section.appendChild(article);
-        
-        
+//******************Counters******************
+
+countHeight();
+
+console.log(window.scrollY);
+console.log(w);
+console.log(h);
+
+window.addEventListener('scroll', countHeight);
+window.addEventListener('resize', measureScreen);
+window.addEventListener('resize', countHeight);
+
+//******************Load state******************
+
+var checkLoad = setInterval(function(){
+    console.log(request.status);
+    if (request.status == 200) {
+        console.log('Load complete...');
+        clearInterval(checkLoad);
+        setTimeout(function(){
+            document.getElementById('loadingFeatured').style.display = "none";
+            document.getElementById('featured').style.height = "30rem";
+            document.getElementById('loadingDiscover').style.display = "none";
+        },1);
     }
-    
-}
+},10);

@@ -1,0 +1,96 @@
+/*///////////////////////Discover///////////////////////*/
+
+main div.discover h2 {
+    max-width: 55rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main div.discover h3 {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+main div.discover h4 {
+    font-weight: 400;
+    font-size: .8rem;
+}
+
+main div.discover {
+    margin: 0 3rem;
+}
+
+main div.discover section {
+    max-width: 55rem;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 3rem;
+}
+
+main div.discover section article {
+    position: relative;
+    margin: 0 auto;
+}
+
+main div.discover section article p {
+    margin: .4rem 0;
+    
+}
+
+main div.discover section article div.score {
+    position: absolute;
+    color: #5d4910;
+    font-size: .8rem;
+    line-height: 1.1rem;
+    top: -.3rem;
+    background: #fec72a;
+    border-radius: 100rem;
+    right: -.7rem;
+    padding: 0 .5rem;
+    min-width: 1rem;
+    height: 1.1rem;
+    vertical-align: middle;
+}
+
+main div.discover section article div.score p {
+    text-align: center;
+    margin: 0;
+}
+
+main div.discover section article img {
+    width: 100%;
+    max-width: 15rem;
+    border-radius: .5rem;
+    box-shadow: 0px 0px 10px black;
+    box-sizing: border-box;
+    border: 4px solid transparent;
+/*    opacity: 0;*/
+}
+
+main div.discover section article img:hover {
+    border: 4px solid #fec72a;
+}
+
+main div.discover section article ul {
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+}
+
+main div.discover section article ul li {
+    font-size: .8rem;
+    color: #358d85;
+    list-style: none;
+}
+
+main div.moreInfo {
+    display: none;
+    z-index: 99;
+/*    position: absolute;*/
+}
+
+main div.discover section article div.show {
+    display: block;
+/*    position: absolute;*/
+}
