@@ -47,13 +47,8 @@ function showMovies(jsonObj){
             }
         
         genreLi.textContent = genres.join(', ');
-            
-        //*************************Plot*************************//
-
-        var myPara = document.createElement('p');
-        myPara.textContent = jsonObj[x].plot;
-        }
         
+        }
         //*************************Score*************************//
         
         var reviews = document.createElement('div');
@@ -65,6 +60,11 @@ function showMovies(jsonObj){
         
         var info = document.createElement('div');
         info.classList.add('moreInfo');
+            
+        //*************************Plot*************************//
+
+        var myPara = document.createElement('p');
+        myPara.textContent = jsonObj[x].plot;
         
         //*************************Appends*************************//
         
