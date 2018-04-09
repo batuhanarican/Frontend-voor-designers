@@ -85,8 +85,14 @@ main div.discover section article ul li {
 }
 
 main div.moreInfo {
+    position: absolute;
+    top: 0;
+    left: 0;
     display: none;
     z-index: 99;
+    width: 20rem;
+    background: yellow;
+    
 /*    position: absolute;*/
 }
 

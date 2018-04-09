@@ -34,22 +34,15 @@ function showMovies(jsonObj){
             var genreLi = document.createElement('li');
             genreUl.appendChild(genreLi);
         }
+        genreLi.textContent = genres.join(', ');
         
-        //*************************Score*************************//
+        //*************************Score sum*************************//
         
         var score = jsonObj[x].reviews;
         for (var g=0; g < jsonObj[x].reviews.length; g++) {
             
             var scoreAll = jsonObj[x].reviews[g].score;
-            for (var s=0; s < jsonObj[x].reviews[g].score.length; s++) {
-                
-                var scoreSum = jsonObj[x].reviews[g].score[s];
-            }
-        
-        genreLi.textContent = genres.join(', ');
-        
         }
-        //*************************Score*************************//
         
         var reviews = document.createElement('div');
         var scoreP = document.createElement('p');
@@ -124,13 +117,17 @@ function showMovies(jsonObj){
             }
             var mouseX = event.pageX;
             var mouseY = event.pageY;
+            var getInfo = document.querySelectorAll('div.moreInfo');
                 console.log('Mouse H: ' + mouseX);
                 console.log('Mouse V: ' + mouseY);
 
                 if (mouseX <= (w / 5 * 3 ) ) {
                     console.log('Left');
-        //            getInfo.style.transform = 'translateY('+(mouseY-80)+'px)';
+                    for (var y=0; y < movieSingle.length; y++ ){
+                        getInfo[y].style.transform = 'translateY('+(mouseY-580)+'px)';
+                        getInfo[y].style.transform += 'translateX('+(mouseX-90)+'px)';
                     }
+                }
                 else {
                     console.log('Right');
                 }
