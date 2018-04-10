@@ -9,6 +9,7 @@ html {
 body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 h2 {
@@ -31,7 +32,8 @@ p.height-offset {
     margin: 0;
     top: .2rem;
     left: .2rem;
-    z-index: 2;
+    z-index: 99;
+    display: none;
 }
 
 p.height-counter {
@@ -39,7 +41,8 @@ p.height-counter {
     margin: 0;
     top: 1.5rem;
     left: .2rem;
-    z-index: 2;
+    z-index: 99;
+    display: none;
 }
 
 p.width-counter {
@@ -47,5 +50,15 @@ p.width-counter {
     margin: 0;
     top: 2.8rem;
     left: .2rem;
-    z-index: 2;
+    z-index: 99;
+    display: none;
+}
+
+.moreinfo {
+    position: absolute;
+    z-index: 98;
+    top: -10px;
+    left: -10px;
+    display: none;
+/*    width: 250px;*/
 }

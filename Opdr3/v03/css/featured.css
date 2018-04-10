@@ -1,0 +1,175 @@
+/*///////////////////////Featured///////////////////////*/
+
+main div.featured {
+    height: 0rem;
+    font-size: .8rem;
+}
+
+main div.featured img {
+    position: absolute;
+    top: 0rem;
+    width: 100%;
+    height: 36rem;
+    filter: blur(20px);
+    z-index: -1;
+}
+
+main div.featured h2 {
+    font-size: 2.2rem;
+    text-align: center;
+    -webkit-filter: drop-shadow(1px 1px 2px rgba(0,0,0,.4));
+}
+
+main div.featured section {
+    margin: 0 3rem;
+}
+
+main div.featured section article {
+    position: relative;
+    max-width: 50rem;
+    margin: auto;
+}
+
+main div.featured section article::before {
+    content: '';
+    position: absolute;
+    top: 3rem;
+    background: white;
+    width: 100%;;
+    height: 17.5rem;
+    border-radius: .5rem;
+}
+
+main div.featured section article img {
+    position: absolute;
+    top: 2rem;
+    width: auto;
+    height: auto;
+    border-radius: .5rem;
+    box-shadow: 0px 0px 10px black;
+    filter: none;
+    z-index: 1;
+}
+
+main div.featured section article div.gridWrapper {
+    position: absolute;
+    margin-top: 3rem;
+    margin-left: 14.5rem;
+    margin-right: 1rem;
+    display: grid;
+    grid-gap: 0 0.5rem;
+}
+
+main div.featured section article div.gridWrapper h3 {
+    grid-column: 1 / span 2;
+    margin: 1.0rem 0 .2rem 0;
+    font-size: 1.5rem;
+    color: #3c486e;
+}
+
+main div.featured section article div.gridWrapper h4 {
+    margin: 0;
+    color: #3c486e;
+    font-weight: 600;
+    margin-top: .5rem;
+    margin-bottom: .1rem;
+    
+}
+
+main div.featured section article div.gridWrapper h5 {
+    margin: 0;
+    color: #757575;
+    font-size: .8rem;
+    font-weight: 500;
+    width: 8.2rem;
+}
+
+main div.featured section article div.gridWrapper h5.genres {
+    margin: 0;
+    color: #757575;
+    font-size: .8rem;
+    font-weight: 500;
+    max-width: 20rem;
+}
+
+main div.featured section article div.gridWrapper p {
+    grid-column: 2 / span 1;
+    grid-row: 5 / span 4;
+    margin: 0;
+    max-height: 9.5rem;
+    color: #757575;
+    font-weight: 500;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+}
+
+main div.featured section article ul {
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+}
+
+main div.featured section article ul li {
+    display: block;
+    color: #757575;
+    font-weight: 500;
+    list-style: none;
+}
+
+main div.featured section article ul li:nth-child(n+7) {
+    display: none;
+}
+
+main div.featured section article ul li:last-child {
+    display: block;
+}
+
+.buttons {
+    position: relative;
+    width: 100%;
+    max-width: 10rem;
+    margin: auto;
+    
+}
+
+.buttons ul {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    padding: 0;
+    margin: auto;
+    top: 22.4rem;
+}
+
+.buttons ul li {
+    height: 1.5rem;
+    width: 1.5rem;
+    margin: auto;
+    list-style-type: none;
+    -webkit-filter: drop-shadow(1px 1px 2px rgba(0,0,0,1));
+    cursor: pointer;
+}
+
+.buttons ul li:first-child {
+    background-image: url(../img/arrowL.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.buttons ul li:nth-child(2) {
+    background-image: url(../img/play.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.buttons ul li:last-child {
+    background-image: url(../img/arrowR.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.buttons ul li.pauseButton {
+    background-image: url(../img/pause.svg);
+}

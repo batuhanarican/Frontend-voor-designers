@@ -58,16 +58,17 @@ function showFeatured(jsonObj){
         var actorLi = document.createElement('li');
         
         var actors = jsonObj[x].actors;
-        for (var g=0; g < 4; g++) {
+        for (var g=0; g < jsonObj[x].actors.length; g++) {
             var actorName = jsonObj[x].actors[g].actor_name;
             var actorLi = document.createElement('li');
             actorUl.appendChild(actorLi);
             actorLi.textContent = actorName;
         }
         
-        if (jsonObj[x].actors.length > 4){
+        if (jsonObj[x].actors.length > 6){
             var actorMore = document.createElement('li');
-            actorMore.textContent = '+' + jsonObj[x].actors.length -4 + ' more';
+            actorMore.textContent = 'And ';
+            actorMore.textContent += jsonObj[x].actors.length -6 + ' more';
             actorUl.appendChild(actorMore);
         }
 
@@ -119,9 +120,7 @@ function showFeatured(jsonObj){
         gridWrapper.appendChild(myPara);
         gridWrapper.appendChild(actorTitle);
         gridWrapper.appendChild(actorUl);
-//        actorUl.appendChild(actorLi);
         gridWrapper.appendChild(reviews);
-//        reviews.appendChild(scoreP);
         article.appendChild(gridWrapper);
         sectionFeatured.appendChild(article);
         featured.appendChild(sectionFeatured);

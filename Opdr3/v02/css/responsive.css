@@ -1,0 +1,41 @@
+@media all and (max-width:60rem) {
+    main div.discover section {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    main div.loadingDiscover section {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media all and (max-width:50rem) {
+    main div.discover section {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    main div.loadingDiscover section {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media all and (max-width:40rem) {
+    main div.discover section {
+        grid-template-columns: 1fr 1fr;
+    }
+    main div.discover h2 {
+        text-align: center;
+    }
+    main div.loadingDiscover section {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media all and (max-width:24rem) {
+    main div.discover section {
+        grid-template-columns: 1fr;
+    }
+    main div.discover h2 {
+        text-align: center;
+    }
+    main div.loadingDiscover section {
+        grid-template-columns: 1fr;
+    }
+}

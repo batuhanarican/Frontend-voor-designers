@@ -61,7 +61,7 @@ main div.featured section article div.gridWrapper {
 
 main div.featured section article div.gridWrapper h3 {
     grid-column: 1 / span 2;
-    margin: 1.2rem 0 .4rem 0;
+    margin: 1.0rem 0 .2rem 0;
     font-size: 1.5rem;
     color: #3c486e;
 }
@@ -95,13 +95,13 @@ main div.featured section article div.gridWrapper p {
     grid-column: 2 / span 1;
     grid-row: 5 / span 4;
     margin: 0;
-    max-height: 65px;
+    max-height: 9.5rem;
 /*    margin-top: .4rem;*/
     color: #757575;
     font-weight: 500;
     overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 4;
+    -webkit-line-clamp: 10;
     -webkit-box-orient: vertical;
 }
 
@@ -116,4 +116,35 @@ main div.featured section article ul li {
     color: #757575;
     font-weight: 500;
     list-style: none;
+}
+
+main div.featured section article ul li:nth-child(n+7) {
+    display: none;
+}
+
+main div.featured section article ul li:last-child {
+    display: block;
+}
+
+.buttons ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.buttons ul li {
+    display: block;
+    height: 2rem;
+    width: 2rem;
+    list-style-type: none;
+    background: orange;
+}
+
+.buttons ul li:first-child {
+    background: red;
+    background-image: url(../img/)
+}
+
+.buttons ul li:last-child {
+    background: red;
 }

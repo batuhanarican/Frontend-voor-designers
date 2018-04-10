@@ -11,6 +11,9 @@ function showMovies(jsonObj){
         
         var article = document.createElement('article');
         
+        var container = document.createElement('div');
+        container.classList.add('container');
+        
         var img = document.createElement('img');
         img.src = jsonObj[x].cover;  
         
@@ -22,10 +25,16 @@ function showMovies(jsonObj){
         
         //*************************Release*************************//
         
-        var release = document.createElement('h4');
+        var releaseTitle = document.createElement('h4');
+        releaseTitle.textContent = 'Release date';
+        
+        var release = document.createElement('h5');
         release.textContent = jsonObj[x].release_date;
         
         //*************************Genre*************************//
+        
+        var genresTitle = document.createElement('h4');
+        genresTitle.textContent = 'Genres';
         
         var genreUl = document.createElement('ul');
         
@@ -34,6 +43,7 @@ function showMovies(jsonObj){
             var genreLi = document.createElement('li');
             genreUl.appendChild(genreLi);
         }
+        
         genreLi.textContent = genres.join(', ');
         
         //*************************Score sum*************************//
@@ -53,22 +63,61 @@ function showMovies(jsonObj){
         
         var info = document.createElement('div');
         info.classList.add('moreInfo');
+        
+        //*************************Title*************************//
+            
+        var h3Info = document.createElement('h3');
+        h3Info.textContent = jsonObj[x].title;
             
         //*************************Plot*************************//
+        
+        var synopsisTitle = document.createElement('h4');
+        synopsisTitle.textContent = 'Synopsis';
 
         var myPara = document.createElement('p');
         myPara.textContent = jsonObj[x].plot;
         
+        //*************************Actors*************************//
+
+        var actorTitle = document.createElement('h4');
+        actorTitle.textContent = 'Starring';
+        
+        var actorUl = document.createElement('ul');
+        var actorLi = document.createElement('li');
+        
+        var actors = jsonObj[x].actors;
+        for (var g=0; g < jsonObj[x].actors.length; g++) {
+            var actorName = jsonObj[x].actors[g].actor_name;
+            var actorLi = document.createElement('li');
+            actorUl.appendChild(actorLi);
+            actorLi.textContent = actorName;
+        }
+        
+        if (jsonObj[x].actors.length > 4){
+            var actorMore = document.createElement('li');
+            actorMore.textContent = 'And ';
+            actorMore.textContent += jsonObj[x].actors.length -4 + ' more';
+            actorMore.classList.add('actorMore');
+            actorUl.appendChild(actorMore);
+        }
+        
         //*************************Appends*************************//
         
-        article.appendChild(img);
-        article.appendChild(reviews);
+        article.appendChild(container);
+        container.appendChild(img);
+        container.appendChild(reviews);
         reviews.appendChild(scoreP);
-        article.appendChild(release);
-        article.appendChild(genreUl);
-        article.appendChild(h3);
+        container.appendChild(h3);
         article.appendChild(info);
+        info.appendChild(h3Info);
+        info.appendChild(releaseTitle);
+        info.appendChild(genresTitle);
+        info.appendChild(release);
+        info.appendChild(genreUl);
+        info.appendChild(synopsisTitle);
         info.appendChild(myPara);
+//        info.appendChild(actorTitle);
+        info.appendChild(actorUl);
         sectionDiscover.appendChild(article);
         discover.appendChild(sectionDiscover);
         main.appendChild(discover);
@@ -77,16 +126,15 @@ function showMovies(jsonObj){
     
         //*************************Hover class add*************************//
 
-        var movieSingle = document.querySelectorAll('div.discover section article img');
-
-        var getInfo = document.querySelectorAll('div.moreInfo');
+        var movieSingle = document.querySelectorAll('div.discover section article div.container img');
 
         function showInfo(e){
-            this.parentNode.childNodes[5].classList.add('show');
+            this.parentNode.parentNode.childNodes[1].classList.add('show');
         }
 
         function hideInfo(e){           
-            this.parentNode.childNodes[5].classList.remove('show');
+            this.parentNode.parentNode.childNodes[1].classList.remove('show');
+            this.parentNode.parentNode.childNodes[1].classList.remove('show');
         }
 
         for (var i=0; i < movieSingle.length; i++ ){
@@ -94,7 +142,7 @@ function showMovies(jsonObj){
             movieSingle[i].addEventListener('mouseleave', hideInfo);
         }
     
-    //*************************Mouse location*************************//
+    //*************************Get mouse location*************************//
     
     (function() {
         document.onmousemove = handleMouseMove;
@@ -117,28 +165,42 @@ function showMovies(jsonObj){
             }
             var mouseX = event.pageX;
             var mouseY = event.pageY;
-            var getInfo = document.querySelectorAll('div.moreInfo');
-                console.log('Mouse H: ' + mouseX);
-                console.log('Mouse V: ' + mouseY);
+            var getInfo = document.querySelectorAll('div.show');
+            console.log('Mouse H: ' + mouseX);
+            console.log('Mouse V: ' + mouseY);
+            
+            //*************************Use mouse location*************************//
 
-                if (mouseX <= (w / 5 * 3 ) ) {
-                    console.log('Left');
-                    for (var y=0; y < movieSingle.length; y++ ){
-                        getInfo[y].style.transform = 'translateY('+(mouseY-580)+'px)';
-                        getInfo[y].style.transform += 'translateX('+(mouseX-90)+'px)';
-                    }
-                }
-                else {
-                    console.log('Right');
-                }
+            if (mouseX <= (w - 360) && mouseY <= (h + o - 320)) {
+                console.log('Left under');
+                for (var y=0; y < movieSingle.length; y++ ){
+                    getInfo[y].style.left = mouseX + 10 +'px';
+                    getInfo[y].style.top = mouseY + 10 +'px';
 
-                if (mouseY <= (h + o + - 300 ) ) {
-                    console.log('Under');
-                    }
-                else {
-                    console.log('Up');
                 }
             }
+            if (mouseX > (w - 360) && mouseY <= (h + o - 320)) {
+                console.log('Right under');
+                for (var y=0; y < movieSingle.length; y++ ){
+                    getInfo[y].style.left = mouseX - 320 +'px';
+                    getInfo[y].style.top = mouseY + 10 +'px';
+                }
+            }
+            if (mouseX <= (w - 360) && mouseY > (h + o - 320)) {
+                console.log('Left above');
+                for (var y=0; y < movieSingle.length; y++ ){
+                    getInfo[y].style.left = mouseX + 10 +'px';
+                    getInfo[y].style.top = mouseY -280 +'px';
+                }
+            }
+            if (mouseX > (w - 360) && mouseY > (h + o - 320)) {
+                console.log('Right above');
+                for (var y=0; y < movieSingle.length; y++ ){
+                    getInfo[y].style.left = mouseX - 320 +'px';
+                    getInfo[y].style.top = mouseY - 280 +'px';
+                }
+            }
+        }
     })();
     
 }

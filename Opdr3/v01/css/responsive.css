@@ -28,7 +28,7 @@
     }
 }
 
-@media all and (max-width:30rem) {
+@media all and (max-width:24rem) {
     main div.discover section {
         grid-template-columns: 1fr;
     }
