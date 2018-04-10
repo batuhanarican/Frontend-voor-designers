@@ -1,5 +1,7 @@
 # Opdracht 2 (Gekozen versie: v03)
 
+[Terug](..)
+
 Voor opdracht 2 heb ik een website gemaakt waarin de scroll waarde wordt gebruikt als interactie.
 
 ## 06. One primary action per screen:
@@ -13,8 +15,6 @@ Wanneer de gebruiker op de pijl klikt, scrollt de website naar beneden. Hierdoor
 ## 14. Progressive disclosure:
 
 Met bolletjes geef ik aan waar de gebruiker is op de website en hoeveel er nog te zien is. Als de gebruiker klikt op de bolletjes of pijltjes, scrollt de website naar de desbetreffende gedeelte met meer informatie.
-
-[Terug](..)
 
 [Demo versie 1](v01/)
 
