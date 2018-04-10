@@ -30,7 +30,7 @@ var pFeatured = document.querySelector('main div.featured p');
 
 //******************Request******************
 
-    var requestURL = './movies.json';
+    var requestURL = 'https://batuhanarican.github.io/Frontend-voor-designers/Opdr3/v01/movies.json';
     var request = new XMLHttpRequest();
 
 request.open('GET', requestURL);
