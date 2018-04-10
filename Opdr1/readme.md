@@ -1,4 +1,4 @@
-# Opdracht 1
+# Opdracht 1 (Gekozen versie: v03)
 
 Voor opdracht 1 heb ik een website gemaakt waarop de gebruiker kan filteren op kleur.
 
@@ -15,4 +15,4 @@ Door de interactie (knoppen) en beeldmateriaal van elkaar te scheiden, maak ik d
 
 [Demo versie 2](v02/)
 
-[Demo versie 3 | Gekozen ontwerp] (v03/)
+[Demo versie 3] (v03/)

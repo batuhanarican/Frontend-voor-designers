@@ -1,4 +1,4 @@
-# Opdracht 2
+# Opdracht 2 (Gekozen versie: v03)
 
 Voor opdracht 2 heb ik een website gemaakt waarin de scroll waarde wordt gebruikt als interactie.
 
@@ -18,4 +18,4 @@ Met bolletjes geef ik aan waar de gebruiker is op de website en hoeveel er nog t
 
 [Demo versie 2](v02/)
 
-[Demo versie 3 | Gekozen ontwerp](v03/)
+[Demo versie 3](v03/)
