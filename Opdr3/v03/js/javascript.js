@@ -32,8 +32,8 @@ var pFeatured = document.querySelector('main div.featured p');
 
 //******************Request******************
 
-    var requestURL = './movies.json';
-    var request = new XMLHttpRequest();
+var requestURL = './movies.json';
+var request = new XMLHttpRequest();
 
 request.open('GET', requestURL);
 request.responseType = 'json';
@@ -65,7 +65,7 @@ window.addEventListener('resize', countHeight);
 
 var checkLoad = setInterval(function(){
     console.log(request.status);
-    if (request.status == 200) {
+    if (request.status === 200) {
         console.log('Load complete...');
         clearInterval(checkLoad);
         setTimeout(function(){
