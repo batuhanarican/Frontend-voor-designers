@@ -14,6 +14,8 @@ Wanneer de gebruiker op de pijl klikt, scrollt de website naar beneden. Hierdoor
 
 Met bolletjes geef ik aan waar de gebruiker is op de website en hoeveel er nog te zien is. Als de gebruiker klikt op de bolletjes of pijltjes, scrollt de website naar de desbetreffende gedeelte met meer informatie.
 
+[Terug](..)
+
 [Demo versie 1](v01/)
 
 [Demo versie 2](v02/)
