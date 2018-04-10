@@ -98,12 +98,12 @@ main div.featured section article div.gridWrapper p {
     grid-column: 2 / span 1;
     grid-row: 5 / span 4;
     margin: 0;
-    max-height: 9.5rem;
+    max-height: 9.1rem;
     color: #757575;
     font-weight: 500;
     overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 10;
+    -webkit-line-clamp: 9;
     -webkit-box-orient: vertical;
 }
 

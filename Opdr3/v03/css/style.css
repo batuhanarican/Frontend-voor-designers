@@ -33,7 +33,7 @@ p.height-offset {
     top: .2rem;
     left: .2rem;
     z-index: 99;
-/*    display: none;*/
+    display: none;
 }
 
 p.height-counter {
@@ -42,7 +42,7 @@ p.height-counter {
     top: 1.5rem;
     left: .2rem;
     z-index: 99;
-/*    display: none;*/
+    display: none;
 }
 
 p.width-counter {
@@ -51,7 +51,7 @@ p.width-counter {
     top: 2.8rem;
     left: .2rem;
     z-index: 99;
-/*    display: none;*/
+    display: none;
 }
 
 header {

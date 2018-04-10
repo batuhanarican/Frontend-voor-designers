@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Laag_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 403 460.7" style="enable-background:new 0 0 403 460.7;" xml:space="preserve">
+	 viewBox="0 0 432.9 490.7" style="enable-background:new 0 0 432.9 490.7;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#FFFFFF;}
 </style>
-<g>
-	<path class="st0" d="M14.8,460.7c-2.6,0-5.1-0.7-7.4-2c-4.6-2.6-7.4-7.5-7.4-12.8V14.8C0,9.5,2.8,4.6,7.4,2C12-0.7,17.6-0.7,22.2,2
-		l373.3,215.6c4.6,2.6,7.4,7.5,7.4,12.8s-2.8,10.2-7.4,12.8L22.2,458.7C19.9,460.1,17.4,460.7,14.8,460.7z M29.6,40.5v379.8
-		l328.9-189.9L29.6,40.5z"/>
-</g>
+<path class="st0" d="M418,219.6L44.7,4c-9.2-5.4-20.6-5.4-29.8,0C5.7,9.3,0,19.1,0,29.8v431.1c0,10.7,5.8,20.6,15,25.9
+	c4.6,2.6,9.7,3.9,14.8,3.9c5.4,0,10.5-1.4,15-4.1l373.1-215.4c9.2-5.2,15-15.1,15-25.8C432.9,234.7,427.2,224.8,418,219.6z
+	 M59.6,409.3V81.5l283.9,163.9L59.6,409.3z"/>
 </svg>
