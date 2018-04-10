@@ -10,6 +10,7 @@ Om de gebruikers de interactie duidelijk te maken, geef ik door middel van vulli
 
 Door de interactie (knoppen) en beeldmateriaal van elkaar te scheiden, maak ik de gebruiker duidelijk dat het twee verschillende secties zijn in de website. De knoppen en afbeeldingen hebben consistente stijlen locaties, zodat de gebruiker de groepering begrijpt.
 
+[Terug](..)
 
 [Demo versie 1](v01/)
 
