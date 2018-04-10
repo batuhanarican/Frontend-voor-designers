@@ -15,4 +15,4 @@ Door de interactie (knoppen) en beeldmateriaal van elkaar te scheiden, maak ik d
 
 [Demo versie 2](v02/)
 
-[Demo versie 3] (v03/)
+[Demo versie 3](v03/)
