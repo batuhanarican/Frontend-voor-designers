@@ -3,6 +3,8 @@
 main div.featured {
     height: 0rem;
     font-size: .8rem;
+    margin-top: 3rem;
+    margin-bottom: -3rem;
 }
 
 main div.featured img {

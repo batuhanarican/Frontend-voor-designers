@@ -1,7 +1,7 @@
 //*************************Featured*************************//
 
-var h2 = document.createElement('h2');
-    featured.appendChild(h2);
+//var h2 = document.createElement('h2');
+//    featured.appendChild(h2);
 
 
 function showFeatured(jsonObj){    
@@ -143,6 +143,10 @@ function showFeatured(jsonObj){
     }
 
     function sliderRight() {
+        if (a == jsonObj.length -1){
+            a = -1;
+        }
+        
         if (a > jsonObj.length -1) {
             a = -1;
             for(var x=0; x < jsonObj.length; x++){
@@ -176,11 +180,13 @@ function showFeatured(jsonObj){
                 articleBgAdd[a].classList.add('articleBgAdd');
             }
         }
+        console.log(a);
     }
 
     function sliderLeft() {
-        if (a < 0) {
-            a = jsonObj.length -1;
+        if (a == 0) {
+            a = jsonObj.length;
+            sliderLeft();
             for(var x=0; x < jsonObj.length; x++){
                 articleAdd[x].classList.remove('articleAdd');
                 articleBgAdd[x].classList.remove('articleBgAdd');
@@ -195,7 +201,7 @@ function showFeatured(jsonObj){
             }
         }
 
-        if (a > 0) {
+        else {
             a--;
             for(var x=0; x < jsonObj.length; x++){
                 articleAdd[x].classList.remove('articleAdd');
@@ -211,6 +217,8 @@ function showFeatured(jsonObj){
                 articleBgAdd[a].classList.add('articleBgAdd');
             }
         }
+        
+        console.log(a);
     }
 
         runSlider();

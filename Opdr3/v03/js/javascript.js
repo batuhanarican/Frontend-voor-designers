@@ -2,6 +2,7 @@ var counter = document.querySelector('.height-offset');
 var counter2 = document.querySelector('.height-counter');
 var counter3 = document.querySelector('.width-counter');
 
+var o = window.pageYOffset;
 var w = window.innerWidth;
 var h = window.innerHeight;
 
@@ -15,6 +16,7 @@ function countHeight() {
 }
 
 function measureScreen() {
+    console.log(o);
     console.log(w);
     console.log(h);
 }
@@ -45,13 +47,13 @@ setTimeout(function(){
     showMovies(jsonObj);
     showMovies(jsonObj);
     };
-},2000);
+},1);
 
 //******************Counters******************
 
 countHeight();
 
-console.log(window.scrollY);
+console.log(o);
 console.log(w);
 console.log(h);
 

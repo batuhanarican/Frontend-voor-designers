@@ -6,16 +6,17 @@
 /*///////////////////////Featured///////////////////////*/
 
 main div.loadingFeatured {
-    margin-top: 4.4rem;
+    margin-top: 6rem;
     height: 25.5rem;
     font-size: .8rem;
+    margin-bottom: 2.8rem;
 }
 
 main div.loadingFeatured .bgPlaceholder {
     position: absolute;
     top: 0rem;
     width: 100%;
-    height: 32rem;
+    height: 32.5rem;
     background: linear-gradient(to bottom, #142249 0%,#0d1329 100%);
     filter: blur(20px);
     z-index: -1;
@@ -45,12 +46,12 @@ main div.loadingFeatured section article .imgPlaceholder {
     position: absolute;
     top: 2rem;
     width: 214px;
-    height: 307px;
+    height: 317px;
     border-radius: .5rem;
     box-shadow: 0px 0px 10px black;
     filter: none;
     z-index: 1;
-    animation-duration: 1.5s;
+    animation-duration: 1s;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
     animation-name: placeHolderShimmer;
@@ -111,6 +112,179 @@ main div.loadingFeatured section article ul li {
     list-style: none;
 }
 
+.placeholder {
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeHolderShimmer;
+    animation-timing-function: linear;
+    background: #f6f7f8;
+    background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+    background-size: 800px 104px;
+}
+
+main div.loadingFeatured div.datePlaceholder {
+    position: absolute;
+    top: 4.2rem;
+    left: 15rem;
+    width: 22rem;
+    height: 1.8rem;
+}
+
+main div.loadingFeatured div.releasePlaceholder {
+    position: absolute;
+    top: 6.6rem;
+    left: 15rem;
+    width: 7rem;
+    height: .8rem;
+}
+
+main div.loadingFeatured div.releasePlaceholder2 {
+    position: absolute;
+    top: 7.6rem;
+    left: 15rem;
+    width: 6rem;
+    height: .8rem;
+}
+
+
+main div.loadingFeatured div.genrePlaceholder {
+    position: absolute;
+    top: 6.6rem;
+    left: 23rem;
+    width: 6rem;
+    height: .8rem;
+}
+
+main div.loadingFeatured div.genrePlaceholder2 {
+    position: absolute;
+    top: 7.6rem;
+    left: 23rem;
+    width: 8rem;
+    height: .8rem;
+}
+
+main div.loadingFeatured div.directorPlaceholder {
+    position: absolute;
+    top: 9.2rem;
+    left: 15rem;
+    width: 5rem;
+    height: .8rem;
+}
+
+main div.loadingFeatured div.directorPlaceholder2 {
+    position: absolute;
+    top: 10.2rem;
+    left:15rem;
+    width: 6.5rem;
+    height: .8rem;
+}
+
+main div.loadingFeatured div.starringPlaceholder {
+    position: absolute;
+    top: 11.6rem;
+    left: 15rem;
+    width: 6rem;
+    height: .8rem;
+}
+
+main div.loadingFeatured div.starringPlaceholder2 {
+    position: absolute;
+    top: 12.7rem;
+    left:15rem;
+    width: 7rem;
+    height: .8rem;
+}
+
+
+main div.loadingFeatured div.starringPlaceholder3 {
+    position: absolute;
+    top: 13.8rem;
+    left:15rem;
+    width: 6.6rem;
+    height: .8rem;
+}
+
+main div.loadingFeatured div.starringPlaceholder4 {
+    position: absolute;
+    top: 14.9rem;
+    left:15rem;
+    width: 6rem;
+    height: .8rem;
+}
+
+main div.loadingFeatured div.starringPlaceholder5 {
+    position: absolute;
+    top: 16rem;
+    left:15rem;
+    width: 6.8rem;
+    height: .8rem;
+}
+
+main div.loadingFeatured div.plotPlaceholder {
+    position: absolute;
+    top: 9.2rem;
+    left:23rem;
+    width: 6.8rem;
+    height: .8rem;
+}
+
+main div.loadingFeatured div.plotPlaceholder2 {
+    position: absolute;
+    top: 10.2rem;
+    left:23rem;
+    width: 22rem;
+    height: .8rem;
+}
+
+main div.loadingFeatured div.plotPlaceholder3 {
+    position: absolute;
+    top: 11.2rem;
+    left:23rem;
+    width: 24rem;
+    height: .8rem;
+}
+
+main div.loadingFeatured div.plotPlaceholder4 {
+    position: absolute;
+    top: 12.2rem;
+    left: 23rem;
+    width: 16rem;
+    height: .8rem;
+}
+
+main div.loadingFeatured div.plotPlaceholder5 {
+    position: absolute;
+    top: 13.2rem;
+    left:23rem;
+    width: 18rem;
+    height: .8rem;
+}
+
+main div.loadingFeatured div.plotPlaceholder6 {
+    position: absolute;
+    top: 14.2rem;
+    left:23rem;
+    width: 23rem;
+    height: .8rem;
+}
+
+main div.loadingFeatured div.plotPlaceholder7 {
+    position: absolute;
+    top: 15.2rem;
+    left:23rem;
+    width: 20rem;
+    height: .8rem;
+}
+
+main div.loadingFeatured div.plotPlaceholder8 {
+    position: absolute;
+    top: 16.2rem;
+    left:23rem;
+    width: 14rem;
+    height: .8rem;
+}
+
 /*///////////////////////Discover///////////////////////*/
 
 main div.loadingDiscover section article p {
@@ -135,7 +309,7 @@ main div.loadingDiscover h4 {
 }
 
 main div.loadingDiscover {
-    margin: 0 3rem;
+    margin: -1.2rem 3rem;
 }
 
 main div.loadingDiscover section {
@@ -152,13 +326,13 @@ main div.loadingDiscover section article {
 /*    margin-top: -1rem;*/
 }
 
-main div.loadingDiscover section article .imgPlaceholder {
+main div.loadingDiscover section article div.imgPlaceholder {
     width: 8.5rem;
     height: 12.5rem;
     max-width: 15rem;
     border-radius: .5rem;
     box-shadow: 0px 0px 10px black;
-    animation-duration: 1.5s;
+    animation-duration: 1s;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
     animation-name: placeHolderShimmer;
@@ -172,7 +346,7 @@ main div.loadingDiscover section article div.datePlaceholder {
     margin-top: 1.4rem;
     width: 75%;
     height: .6rem;
-    animation-duration: 1.5s;
+    animation-duration: 1s;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
     animation-name: placeHolderShimmer;
@@ -186,7 +360,7 @@ main div.loadingDiscover section article div.genrePlaceholder {
     margin-top: .4rem;
     width: 60%;
     height: .6rem;
-    animation-duration: 1.5s;
+    animation-duration: 1s;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
     animation-name: placeHolderShimmer;
@@ -200,7 +374,7 @@ main div.loadingDiscover section article div.titlePlaceholder {
     margin-top: .8rem;
     width: 90%;
     height: 1rem;
-    animation-duration: 1.5s;
+    animation-duration: 1s;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
     animation-name: placeHolderShimmer;

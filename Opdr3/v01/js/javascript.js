@@ -45,7 +45,7 @@ setTimeout(function(){
     showMovies(jsonObj);
     showMovies(jsonObj);
     };
-},2000);
+},1);
 
 //******************Counters******************
 

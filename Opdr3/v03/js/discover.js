@@ -166,13 +166,13 @@ function showMovies(jsonObj){
             var mouseX = event.pageX;
             var mouseY = event.pageY;
             var getInfo = document.querySelectorAll('div.show');
-            console.log('Mouse H: ' + mouseX);
-            console.log('Mouse V: ' + mouseY);
+//            console.log('Mouse H: ' + mouseX);
+//            console.log('Mouse V: ' + mouseY);
             
             //*************************Use mouse location*************************//
 
             if (mouseX <= (w - 360) && mouseY <= (h + o - 320)) {
-                console.log('Left under');
+//                console.log('Left under');
                 for (var y=0; y < movieSingle.length; y++ ){
                     getInfo[y].style.left = mouseX + 10 +'px';
                     getInfo[y].style.top = mouseY + 10 +'px';
@@ -180,21 +180,21 @@ function showMovies(jsonObj){
                 }
             }
             if (mouseX > (w - 360) && mouseY <= (h + o - 320)) {
-                console.log('Right under');
+//                console.log('Right under');
                 for (var y=0; y < movieSingle.length; y++ ){
                     getInfo[y].style.left = mouseX - 320 +'px';
                     getInfo[y].style.top = mouseY + 10 +'px';
                 }
             }
             if (mouseX <= (w - 360) && mouseY > (h + o - 320)) {
-                console.log('Left above');
+//                console.log('Left above');
                 for (var y=0; y < movieSingle.length; y++ ){
                     getInfo[y].style.left = mouseX + 10 +'px';
                     getInfo[y].style.top = mouseY -280 +'px';
                 }
             }
             if (mouseX > (w - 360) && mouseY > (h + o - 320)) {
-                console.log('Right above');
+//                console.log('Right above');
                 for (var y=0; y < movieSingle.length; y++ ){
                     getInfo[y].style.left = mouseX - 320 +'px';
                     getInfo[y].style.top = mouseY - 280 +'px';
