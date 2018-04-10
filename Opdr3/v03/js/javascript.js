@@ -30,7 +30,7 @@ var pFeatured = document.querySelector('main div.featured p');
 
 //******************Request******************
 
-    var requestURL = 'http://dennistel.nl/movies';
+    var requestURL = './movies.json';
     var request = new XMLHttpRequest();
 
 request.open('GET', requestURL);
@@ -45,7 +45,7 @@ setTimeout(function(){
     showMovies(jsonObj);
     showMovies(jsonObj);
     };
-},1);
+},2000);
 
 //******************Counters******************
 
