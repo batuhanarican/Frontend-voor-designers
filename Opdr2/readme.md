@@ -1,6 +1,6 @@
-# Opdracht 2 (Gekozen versie: v03)
+[Terug](../)
 
-[Terug](..)
+# Opdracht 2 (Gekozen versie: v03)
 
 Voor opdracht 2 heb ik een website gemaakt waarin de scroll waarde wordt gebruikt als interactie.
 

@@ -1,4 +1,4 @@
-[Terug](..)
+[Terug](../)
 
 # Opdracht 1 (Gekozen versie: v03)
 
