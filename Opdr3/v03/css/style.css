@@ -66,7 +66,7 @@ header div {
     height: 4rem;
     position: fixed;
     background: rgba(12, 17, 36, .7);
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(15px);
     animation: .3s ease-in-out;
 }
 

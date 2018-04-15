@@ -264,6 +264,8 @@ function showFeatured(jsonObj){
     
     var clicked = 0;
     
+    runPlay();
+    
     function runPlay() {
         if (clicked === 0) {
             sliderPlay();
@@ -277,7 +279,6 @@ function showFeatured(jsonObj){
             clicked= 0;
         }
     }
-    
     
     play.addEventListener('click', runPlay);
     prev.addEventListener('click', sliderLeft);
